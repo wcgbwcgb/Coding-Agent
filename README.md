@@ -320,29 +320,7 @@ python scripts/eval_before_after_sft.py \
 
 结果解读：这个提升主要说明 SFT 显著增强了模型对 **Agent 输出协议和 JSON 格式** 的遵循能力；它不等同于真实复杂代码修复能力已经同幅度提升。更严格的下一步应加入 held-out 测试集、真实 patch 执行和端到端 Agent loop 评估。
 
----
 
-## GitHub 发布建议
-
-建议上传：
-
-- `src/cc_agent/`
-- `scripts/`
-- `examples/`
-- `data/tasks/`、`data/sft/`、`data/llamafactory/` 中的小规模样例
-- `docs/`
-- `README.md`、`requirements.txt`、`pyproject.toml`、`.env.example`、`.gitignore`
-
-不要上传：
-
-- `.env`
-- `models/`
-- `outputs/`
-- `traces/`
-- `logs/`
-- `*.safetensors`
-- `*.log`
-- 本地 API key、私有 endpoint、公司内网地址、个人绝对路径
 
 ---
 
