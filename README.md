@@ -7,7 +7,7 @@
 1. **Code Agent 原型**：参考 Claude Code / Aider / OpenHands 的公开思路，实现仓库扫描、检索、规划、工具调用、测试验证、Review Subagent 和 JSONL trace 记录。
 2. **Agent SFT 实验闭环**：将 Agent 工具轨迹、MBPP/HumanEval、SWE-bench Lite plan 数据转换为 LLaMA-Factory 训练格式，并基于 Qwen3-8B 做 LoRA SFT，对比微调前后效果。
 
-> 说明：本仓库不包含任何私有 API、公司内网配置、模型权重、训练 checkpoint 或个人路径。模型权重和训练输出请按文档本地生成。
+> 说明：本仓库不包含任何私有 API、模型权重、训练 checkpoint 或个人路径。模型权重和训练输出请按文档本地生成。
 
 ---
 
