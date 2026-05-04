@@ -1,0 +1,2 @@
+def index_minimum(test_list):
+    pass

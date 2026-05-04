@@ -1,0 +1,7 @@
+from solution import *
+
+
+def test_mbpp_generated() -> None:
+    assert find_substring(["red", "black", "white", "green", "orange"],"ack")==True
+    assert find_substring(["red", "black", "white", "green", "orange"],"abc")==False
+    assert find_substring(["red", "black", "white", "green", "orange"],"ange")==True

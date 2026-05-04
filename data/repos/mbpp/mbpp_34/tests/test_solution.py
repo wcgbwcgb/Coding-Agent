@@ -1,0 +1,7 @@
+from solution import *
+
+
+def test_mbpp_generated() -> None:
+    assert find_missing([1,2,3,5],4) == 4
+    assert find_missing([1,3,4,5],4) == 2
+    assert find_missing([1,2,3,5,6,7],5) == 4

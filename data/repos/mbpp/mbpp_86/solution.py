@@ -1,0 +1,2 @@
+def centered_hexagonal_number(n):
+    pass

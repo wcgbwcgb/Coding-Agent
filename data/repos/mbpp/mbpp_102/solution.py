@@ -1,0 +1,2 @@
+def snake_to_camel(word):
+    pass

@@ -1,0 +1,2 @@
+def is_samepatterns(colors, patterns):
+    pass

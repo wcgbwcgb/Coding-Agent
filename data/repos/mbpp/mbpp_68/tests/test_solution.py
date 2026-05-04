@@ -1,0 +1,7 @@
+from solution import *
+
+
+def test_mbpp_generated() -> None:
+    assert is_Monotonic([6, 5, 4, 4]) == True
+    assert is_Monotonic([1, 2, 2, 3]) == True
+    assert is_Monotonic([1, 3, 2]) == False

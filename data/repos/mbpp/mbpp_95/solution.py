@@ -1,0 +1,2 @@
+def Find_Min_Length(lst):
+    pass

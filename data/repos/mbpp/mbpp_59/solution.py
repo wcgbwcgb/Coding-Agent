@@ -1,0 +1,2 @@
+def is_octagonal(n):
+    pass

@@ -1,0 +1,2 @@
+def next_smallest_palindrome(num):
+    pass

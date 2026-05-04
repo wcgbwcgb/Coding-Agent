@@ -1,0 +1,17 @@
+from solution import fib4
+
+
+
+METADATA = {}
+
+
+def check(candidate):
+    assert candidate(5) == 4
+    assert candidate(8) == 28
+    assert candidate(10) == 104
+    assert candidate(12) == 386
+
+
+
+def test_humaneval() -> None:
+    check(fib4)
