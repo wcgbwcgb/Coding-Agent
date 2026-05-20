@@ -1,2 +1,2 @@
 def decimal_To_Binary(N):
-    pass
+    return int(bin(N)[2:])

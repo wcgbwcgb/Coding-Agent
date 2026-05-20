@@ -1,0 +1,7 @@
+from solution import *
+
+
+def test_mbpp_generated() -> None:
+    assert square_Sum(2) == 10
+    assert square_Sum(3) == 35
+    assert square_Sum(4) == 84

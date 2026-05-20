@@ -1,6 +1,8 @@
 import re
 
 def text_lowercase_underscore(text):
-    if re.search('^[a-z]+_[a-z]+$', text):
+    pattern = r'^[a-z]+(_[a-z]+)*$'
+    if re.fullmatch(pattern, text):
         return 'Found a match!'
-    return 'Not matched!'
+    else:
+        return 'Not matched!'

@@ -1,0 +1,2 @@
+def split_two_parts(list1, L):
+    pass

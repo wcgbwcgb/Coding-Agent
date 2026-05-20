@@ -1,4 +1,4 @@
-from solution import decode_cyclic
+from solution import decode_cyclic, encode_cyclic
 
 
 

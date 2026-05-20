@@ -1,2 +1,2 @@
 def specified_element(nums, N):
-    pass
+    return [row[N] for row in nums]

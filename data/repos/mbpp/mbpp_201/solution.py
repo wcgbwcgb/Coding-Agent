@@ -1,0 +1,2 @@
+def chkList(lst):
+    pass

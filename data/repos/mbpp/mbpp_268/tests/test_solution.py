@@ -1,0 +1,7 @@
+from solution import *
+
+
+def test_mbpp_generated() -> None:
+    assert find_star_num(3) == 37
+    assert find_star_num(4) == 73
+    assert find_star_num(5) == 121

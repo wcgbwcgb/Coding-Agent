@@ -1,0 +1,2 @@
+def sum_even_and_even_index(arr,n):
+    pass

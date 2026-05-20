@@ -1,0 +1,2 @@
+def check_type(test_tuple):
+    pass

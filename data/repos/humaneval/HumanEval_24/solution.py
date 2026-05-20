@@ -5,4 +5,7 @@ def largest_divisor(n: int) -> int:
     >>> largest_divisor(15)
     5
     """
-    pass
+    for i in range(n - 1, 1, -1):
+        if n % i == 0:
+            return i
+    return 1

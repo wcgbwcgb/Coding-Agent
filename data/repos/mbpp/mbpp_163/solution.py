@@ -1,0 +1,2 @@
+def area_polygon(s,l):
+    pass

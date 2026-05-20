@@ -7,4 +7,4 @@ def max_element(l: list):
     >>> max_element([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])
     123
     """
-    pass
+    return max(l)

@@ -21,4 +21,44 @@ def find_zero(xs: list):
     >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3
     1.0
     """
-    pass
+    # Try multiple initial guesses for robust convergence
+    best_x = 0.0
+    best_f = float('inf')
+    for guess in [-10.0, -5.0, -1.0, 0.0, 1.0, 5.0, 10.0]:
+        x = guess
+        for _ in range(200):
+            f = poly(xs, x)
+            if abs(f) < 1e-6:
+                return x
+            fprime = sum(i * coeff * (x ** (i - 1)) for i, coeff in enumerate(xs) if i > 0)
+            if fprime == 0:
+                x += 0.1
+            else:
+                # Backtracking line search to avoid divergence
+                step = f / fprime
+                for _ in range(10):
+                    new_x = x - step
+                    new_f = poly(xs, new_x)
+                    if abs(new_f) < abs(f):
+                        break
+                    step *= 0.5
+                else:
+                    x = new_x
+                    continue
+                x = x - step
+        f = poly(xs, x)
+        if abs(f) < abs(best_f):
+            best_f = f
+            best_x = x
+    # Refine best_x with a few more Newton steps
+    x = best_x
+    for _ in range(50):
+        f = poly(xs, x)
+        if abs(f) < 1e-6:
+            return x
+        fprime = sum(i * coeff * (x ** (i - 1)) for i, coeff in enumerate(xs) if i > 0)
+        if fprime == 0:
+            x += 0.1
+        else:
+            x -= f / fprime
+    return x

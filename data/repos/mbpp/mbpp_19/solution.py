@@ -1,4 +1,4 @@
 def test_duplicate(arraynums):
-    return len(set(arraynums)) != len(arraynums)
+    return len(arraynums) != len(set(arraynums))
 
 test_duplicate.__test__ = False

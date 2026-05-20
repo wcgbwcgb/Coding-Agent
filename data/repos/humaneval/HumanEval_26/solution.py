@@ -7,4 +7,6 @@ def remove_duplicates(numbers: List[int]) -> List[int]:
     >>> remove_duplicates([1, 2, 3, 2, 4])
     [1, 3, 4]
     """
-    pass
+    from collections import Counter
+    counts = Counter(numbers)
+    return [num for num in numbers if counts[num] == 1]

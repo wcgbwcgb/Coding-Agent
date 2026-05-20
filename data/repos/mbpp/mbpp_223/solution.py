@@ -1,0 +1,2 @@
+def is_majority(arr, n, x):
+    pass

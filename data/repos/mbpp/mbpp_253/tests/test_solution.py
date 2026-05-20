@@ -1,0 +1,7 @@
+from solution import *
+
+
+def test_mbpp_generated() -> None:
+    assert count_integer([1,2,'abc',1.2]) == 2
+    assert count_integer([1,2,3]) == 3
+    assert count_integer([1,1.2,4,5.1]) == 2

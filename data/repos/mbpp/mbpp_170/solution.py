@@ -1,0 +1,2 @@
+def sum_range_list(list1, m, n):
+    pass

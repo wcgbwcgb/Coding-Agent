@@ -1,4 +1,4 @@
-from solution import find_zero
+from solution import find_zero, poly
 
 
 

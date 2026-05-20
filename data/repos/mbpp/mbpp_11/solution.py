@@ -1,8 +1,8 @@
 def remove_Occ(s,ch):
-    first = s.find(ch)
-    if first == -1:
+    if ch not in s:
         return s
-    last = s.rfind(ch)
+    first = s.index(ch)
+    last = s.rindex(ch)
     if first == last:
         return s[:first] + s[first+1:]
     return s[:first] + s[first+1:last] + s[last+1:]

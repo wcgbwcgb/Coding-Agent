@@ -1,0 +1,7 @@
+from solution import *
+
+
+def test_mbpp_generated() -> None:
+    assert tuple_int_str((('333', '33'), ('1416', '55')))==((333, 33), (1416, 55))
+    assert tuple_int_str((('999', '99'), ('1000', '500')))==((999, 99), (1000, 500))
+    assert tuple_int_str((('666', '66'), ('1500', '555')))==((666, 66), (1500, 555))

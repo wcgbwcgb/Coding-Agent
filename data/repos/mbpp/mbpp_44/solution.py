@@ -1,2 +1,4 @@
+import re
+
 def text_match_string(text):
-    pass
+    return 'Found a match!' if re.match(r'^\w', text) else 'Not matched!'

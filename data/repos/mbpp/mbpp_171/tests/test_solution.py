@@ -1,0 +1,7 @@
+from solution import *
+
+
+def test_mbpp_generated() -> None:
+    assert perimeter_pentagon(5)==25
+    assert perimeter_pentagon(10)==50
+    assert perimeter_pentagon(15)==75

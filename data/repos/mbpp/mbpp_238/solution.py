@@ -1,0 +1,2 @@
+def number_of_substrings(str):
+    pass

@@ -1,13 +1,11 @@
 def is_woodall(x):
-    if x % 2 == 0:
-        return False
-    if x < 1:
+    if x <= 0:
         return False
     n = 1
     while True:
-        w = n * (1 << n) - 1
-        if w == x:
+        woodall = n * (1 << n) - 1
+        if woodall == x:
             return True
-        if w > x:
+        if woodall > x:
             return False
         n += 1

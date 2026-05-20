@@ -9,4 +9,8 @@ def sort_even(l: list):
     >>> sort_even([5, 6, 3, 4])
     [3, 6, 5, 4]
     """
-    pass
+    evens = sorted(l[0::2])
+    result = l[:]
+    for i, val in zip(range(0, len(l), 2), evens):
+        result[i] = val
+    return result

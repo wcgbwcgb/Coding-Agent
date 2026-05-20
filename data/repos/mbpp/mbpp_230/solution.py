@@ -1,0 +1,2 @@
+def replace_blank(str1,char):
+    pass

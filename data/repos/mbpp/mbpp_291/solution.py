@@ -1,0 +1,2 @@
+def count_no_of_ways(n, k):
+    pass

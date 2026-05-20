@@ -1,0 +1,2 @@
+def is_num_decagonal(n):
+    pass

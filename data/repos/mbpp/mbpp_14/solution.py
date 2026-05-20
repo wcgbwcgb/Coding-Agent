@@ -1,2 +1,2 @@
 def find_Volume(l,b,h) :
-    return (l * b * h) / 2
+    return 0.5 * l * b * h

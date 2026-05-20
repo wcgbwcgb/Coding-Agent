@@ -5,4 +5,4 @@ def triangle_area(a, h):
     >>> triangle_area(5, 3)
     7.5
     """
-    pass
+    return a * h / 2

@@ -1,0 +1,2 @@
+def list_to_float(test_list):
+    pass

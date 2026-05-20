@@ -19,6 +19,9 @@ def make_palindrome(string: str) -> str:
     """
     if not string:
         return ''
+    # Find the longest palindromic suffix
     for i in range(len(string)):
         if is_palindrome(string[i:]):
-            return string + string[:i][::-1]
+            prefix = string[:i]
+            return string + prefix[::-1]
+    return string  # fallback

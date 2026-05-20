@@ -1,2 +1,2 @@
 def find_rect_num(n):
-    pass
+    return n * (n + 1)

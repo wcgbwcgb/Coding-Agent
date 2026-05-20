@@ -16,4 +16,9 @@ def pairs_sum_to_zero(l):
     >>> pairs_sum_to_zero([1])
     False
     """
-    pass
+    seen = set()
+    for x in l:
+        if -x in seen:
+            return True
+        seen.add(x)
+    return False

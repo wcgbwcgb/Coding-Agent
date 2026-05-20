@@ -1,0 +1,2 @@
+def magic_square_test(my_matrix):
+    pass

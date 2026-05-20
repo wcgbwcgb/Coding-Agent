@@ -1,2 +1,2 @@
 def check_equilateral(x,y,z):
-    pass
+    return x == y == z

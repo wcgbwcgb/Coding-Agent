@@ -1,0 +1,7 @@
+from solution import *
+
+
+def test_mbpp_generated() -> None:
+    assert lps("TENS FOR TENS") == 5 
+    assert lps("CARDIO FOR CARDS") == 7
+    assert lps("PART OF THE JOURNEY IS PART") == 9 

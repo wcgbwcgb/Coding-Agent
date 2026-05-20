@@ -15,4 +15,6 @@ def parse_music(music_string: str) -> List[int]:
     [4, 2, 1, 2, 2, 1, 1, 1, 1, 4, 4]
     """
     note_map = {'o': 4, 'o|': 2, '.|': 1}
+    if not music_string:
+        return []
     return [note_map[note] for note in music_string.split()]

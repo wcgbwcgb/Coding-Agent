@@ -1,0 +1,2 @@
+def re_arrange_array(arr, n):
+    pass

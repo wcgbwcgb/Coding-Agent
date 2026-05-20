@@ -1,2 +1,2 @@
 def is_octagonal(n):
-    pass
+    return n * (3 * n - 2)

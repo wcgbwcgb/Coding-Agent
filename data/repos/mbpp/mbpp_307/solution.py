@@ -1,0 +1,2 @@
+def colon_tuplex(tuplex,m,n):
+    pass

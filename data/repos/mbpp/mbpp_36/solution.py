@@ -1,2 +1,2 @@
 def find_Nth_Digit(p,q,N) :
-    pass
+    return (p * 10**N // q) % 10

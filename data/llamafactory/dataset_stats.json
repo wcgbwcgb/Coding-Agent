@@ -1,12 +1,12 @@
 {
-  "total": 724,
-  "train": 687,
-  "val": 37,
+  "total": 1080,
+  "train": 1026,
+  "val": 54,
   "inputs": {
-    "agent_traces_sft.jsonl": 124,
-    "swebench_lite_plan_sft.jsonl": 300,
+    "agent_traces_sft.jsonl": 266,
+    "swebench_lite_plan_sft.jsonl": 200,
     "mbpp_strategy_sft.jsonl": 100,
-    "mbpp_sft.jsonl": 100,
-    "humaneval_sft.jsonl": 100
+    "mbpp_sft.jsonl": 350,
+    "humaneval_sft.jsonl": 164
   }
 }

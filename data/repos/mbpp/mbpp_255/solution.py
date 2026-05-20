@@ -1,0 +1,2 @@
+def combinations_colors(l, n):
+    pass

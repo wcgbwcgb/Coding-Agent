@@ -1,0 +1,2 @@
+def smartNumber(n):
+    pass

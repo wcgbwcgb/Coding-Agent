@@ -1,5 +1,5 @@
-def count_Substring_With_Equal_Ends(s):
-    counts = {}
-    for c in s:
-        counts[c] = counts.get(c, 0) + 1
-    return sum(k * (k + 1) // 2 for k in counts.values())
+def count_Substring_With_Equal_Ends(s: str) -> int:
+    freq = {}
+    for ch in s:
+        freq[ch] = freq.get(ch, 0) + 1
+    return sum(v * (v + 1) // 2 for v in freq.values())

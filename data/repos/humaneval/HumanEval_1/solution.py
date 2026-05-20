@@ -9,21 +9,18 @@ def separate_paren_groups(paren_string: str) -> List[str]:
     >>> separate_paren_groups('( ) (( )) (( )( ))')
     ['()', '(())', '(()())']
     """
-    result = []
-    current_string = ""
+    # Remove spaces
+    s = paren_string.replace(' ', '')
+    groups = []
     balance = 0
-    
-    for char in paren_string:
-        if char == ' ':
-            continue
-        current_string += char
-        if char == '(':
+    current = []
+    for ch in s:
+        current.append(ch)
+        if ch == '(':
             balance += 1
-        elif char == ')':
+        else:  # ch == ')'
             balance -= 1
-            
-        if balance == 0 and current_string:
-            result.append(current_string)
-            current_string = ""
-            
-    return result
+        if balance == 0:
+            groups.append(''.join(current))
+            current = []
+    return groups

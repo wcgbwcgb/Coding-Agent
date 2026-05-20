@@ -9,4 +9,10 @@ def sort_third(l: list):
     >>> sort_third([5, 6, 3, 4, 8, 9, 2])
     [2, 6, 3, 4, 8, 9, 5]
     """
-    pass
+    indices = list(range(0, len(l), 3))
+    values = [l[i] for i in indices]
+    values.sort()
+    result = l[:]
+    for i, val in zip(indices, values):
+        result[i] = val
+    return result

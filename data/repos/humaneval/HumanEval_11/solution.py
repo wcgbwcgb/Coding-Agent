@@ -7,4 +7,4 @@ def string_xor(a: str, b: str) -> str:
     >>> string_xor('010', '110')
     '100'
     """
-    return "".join("0" if x == y else "1" for x, y in zip(a, b))
+    return ''.join('1' if x != y else '0' for x, y in zip(a, b))

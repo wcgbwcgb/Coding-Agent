@@ -1,0 +1,2 @@
+def check_occurences(test_list):
+    pass

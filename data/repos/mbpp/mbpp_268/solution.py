@@ -1,0 +1,2 @@
+def find_star_num(n):
+    pass

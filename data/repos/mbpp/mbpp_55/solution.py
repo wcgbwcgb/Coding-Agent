@@ -1,2 +1,2 @@
-def tn_gp(a,n,r):
-    pass
+def tn_gp(a, n, r):
+    return a * (r ** (n - 1))

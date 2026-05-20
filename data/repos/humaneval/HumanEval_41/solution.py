@@ -12,4 +12,4 @@ def car_race_collision(n: int):
 
     This function outputs the number of such collisions.
     """
-    pass
+    return n * n

@@ -13,4 +13,4 @@ def modp(n: int, p: int):
     >>> modp(100, 101)
     1
     """
-    pass
+    return pow(2, n, p)

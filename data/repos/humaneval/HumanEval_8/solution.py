@@ -9,9 +9,9 @@ def sum_product(numbers: List[int]) -> Tuple[int, int]:
     >>> sum_product([1, 2, 3, 4])
     (10, 24)
     """
-    sum_res = 0
-    prod_res = 1
-    for n in numbers:
-        sum_res += n
-        prod_res *= n
-    return (sum_res, prod_res)
+    total_sum = 0
+    total_product = 1
+    for num in numbers:
+        total_sum += num
+        total_product *= num
+    return (total_sum, total_product)

@@ -1,0 +1,2 @@
+def count_first_elements(test_tup):
+    pass
